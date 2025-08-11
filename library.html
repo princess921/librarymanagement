@@ -1,0 +1,256 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrinTek'sLibraryHub - Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header>
+  <div class="logo">📚 PrinTek's Library Hub</div>
+  <!-- Added search bar container to header -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search books, authors, or categories..." class="search-input">
+    <button type="button" id="searchBtn" class="search-btn">🔍</button>
+  </div>
+  <!-- End of added search bar -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Catalog</a></li>
+      <li><a href="#">Admin Login</a></li>
+      <li><a href="#">Student Login</a></li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="library1.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+  </video>
+  <h1>Welcome to PrinTek's Library Hub</h1>
+  <p>Your digital gateway to knowledge. Browse, read, learn.</p>
+  <button id="exploreBtn">Explore Catalog</button>
+</section>
+
+<!-- Added featured books carousel section -->
+<section class="featured-books">
+  <div class="section-header">
+    <h2>Featured Software Development Books</h2>
+    <p>Discover the latest and most popular programming books</p>
+  </div>
+  
+  <!-- Moved navigation buttons outside carousel container -->
+  <div class="carousel-navigation">
+    <button class="carousel-btn prev-btn" id="prevBtn">❮</button>
+    
+    <div class="carousel-container">
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="carouselTrack">
+          
+          <!-- Book 1: Clean Code -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg" alt="Clean Code book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>Clean Code</h4>
+              <p>A Handbook of Agile Software Craftsmanship</p>
+              <span class="book-category">Software Engineering</span>
+            </div>
+          </div>
+
+          <!-- Book 2: The Pragmatic Programmer -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/41BKx1AxQWL._SX396_BO1,204,203,200_.jpg" alt="The Pragmatic Programmer book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>The Pragmatic Programmer</h4>
+              <p>Your Journey to Mastery</p>
+              <span class="book-category">Programming</span>
+            </div>
+          </div>
+
+          <!-- Book 3: Design Patterns -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/51szD9HC9pL._SX395_BO1,204,203,200_.jpg" alt="Design Patterns book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>Design Patterns</h4>
+              <p>Elements of Reusable Object-Oriented Software</p>
+              <span class="book-category">Software Architecture</span>
+            </div>
+          </div>
+
+          <!-- Book 4: JavaScript: The Good Parts -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/5131OWtQRaL._SX381_BO1,204,203,200_.jpg" alt="JavaScript: The Good Parts book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>JavaScript: The Good Parts</h4>
+              <p>The Definitive Guide</p>
+              <span class="book-category">Web Development</span>
+            </div>
+          </div>
+
+          <!-- Book 5: You Don't Know JS -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/41T5H8u7fUL._SX331_BO1,204,203,200_.jpg" alt="You Don't Know JS book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>You Don't Know JS</h4>
+              <p>Up & Going</p>
+              <span class="book-category">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Book 6: Refactoring -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/41LBzpPXCOL._SX379_BO1,204,203,200_.jpg" alt="Refactoring book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>Refactoring</h4>
+              <p>Improving the Design of Existing Code</p>
+              <span class="book-category">Code Quality</span>
+            </div>
+          </div>
+
+          <!-- Book 7: The Clean Coder -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/41yJ75gpV-L._SX376_BO1,204,203,200_.jpg" alt="The Clean Coder book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>The Clean Coder</h4>
+              <p>A Code of Conduct for Professional Programmers</p>
+              <span class="book-category">Professional Development</span>
+            </div>
+          </div>
+
+          <!-- Book 8: Algorithms -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/61Pgdn8Ys-L._SX258_BO1,204,203,200_.jpg" alt="Algorithms book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>Algorithms</h4>
+              <p>Fourth Edition</p>
+              <span class="book-category">Computer Science</span>
+            </div>
+          </div>
+
+          <!-- Book 9: System Design Interview -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/414CRjLjwgL._SX331_BO1,204,203,200_.jpg" alt="System Design Interview book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>System Design Interview</h4>
+              <p>An Insider's Guide</p>
+              <span class="book-category">System Design</span>
+            </div>
+          </div>
+
+          <!-- Book 10: Cracking the Coding Interview -->
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="https://m.media-amazon.com/images/I/41oYsXjLvZL._SX348_BO1,204,203,200_.jpg" alt="Cracking the Coding Interview book cover" class="book-image">
+            </div>
+            <div class="book-info">
+              <h4>Cracking the Coding Interview</h4>
+              <p>189 Programming Questions and Solutions</p>
+              <span class="book-category">Interview Prep</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- Added missing next button -->
+    <button class="carousel-btn next-btn" id="nextBtn">❯</button>
+    <!-- End of added next button -->
+  </div>
+  <!-- End of moved navigation buttons -->
+</section>
+<!-- End of featured books carousel section -->
+
+<section class="features">
+  <div class="feature-box">
+    <h3>🔍 Search Books</h3>
+    <p>Find books by title, author or category</p>
+  </div>
+  <div class="feature-box">
+    <h3>📚 View Catalog</h3>
+    <p>Explore thousands of books in our virtual library</p>
+  </div>
+  <div class="feature-box">
+    <h3>🧑‍💻 Student Portal</h3>
+    <p>Login to borrow or return books easily</p>
+  </div>
+</section>
+
+<!-- Added JavaScript for search and carousel functionality -->
+<script>
+// Search functionality
+document.getElementById('searchBtn').addEventListener('click', function() {
+  const searchTerm = document.getElementById('searchInput').value.trim();
+  if (searchTerm) {
+    alert('Searching for: ' + searchTerm + '\n(This would connect to your catalog system)');
+  }
+});
+
+document.getElementById('searchInput').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    document.getElementById('searchBtn').click();
+  }
+});
+
+// Carousel functionality
+let currentSlide = 0;
+const track = document.getElementById('carouselTrack');
+const totalBooks = document.querySelectorAll('.book-card').length;
+const booksPerView = window.innerWidth <= 768 ? 1 : 4;
+const maxSlide = Math.ceil(totalBooks / booksPerView) - 1;
+
+function updateCarousel() {
+  const translateX = currentSlide * (100 / Math.ceil(totalBooks / booksPerView));
+  track.style.transform = `translateX(-${translateX}%)`;
+}
+
+document.getElementById('nextBtn').addEventListener('click', function() {
+  currentSlide = currentSlide >= maxSlide ? 0 : currentSlide + 1;
+  updateCarousel();
+});
+
+document.getElementById('prevBtn').addEventListener('click', function() {
+  currentSlide = currentSlide <= 0 ? maxSlide : currentSlide - 1;
+  updateCarousel();
+});
+
+// Auto-scroll every 5 seconds
+setInterval(function() {
+  currentSlide = currentSlide >= maxSlide ? 0 : currentSlide + 1;
+  updateCarousel();
+}, 5000);
+</script>
+<!-- End of added JavaScript -->
+
+</body>
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 PrinTek's Library Hub. All rights reserved.</p>
+    <p> Accra, Ghana | Mon-Fri: 8am-6pm</p>
+    <p>contact@printekhub.com | +233 50 442 3192</p>
+  </div>
+</footer>
+</html>
