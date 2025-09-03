@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Login - PrinTek's Library Hub</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header>
+  <div class="logo">📚 PrinTek's Library Hub</div>
+  <nav>
+    <ul>
+      <li><a href="library-index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="catalog.html">Catalog</a></li>
+      <li><a href="admin-login.html">Admin Login</a></li>
+      <li><a href="member-login.html" class="active">Member Login</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="login-hero">
+  <div class="login-hero-bg member-bg"></div>
+  <div class="login-hero-content">
+    <h1>Welcome Back, Learner!</h1>
+    <p>Access your personal library account and continue your learning journey</p>
+  </div>
+</section>
+
+<section class="login-section">
+  <div class="login-container">
+    <div class="login-card member-card">
+      <div class="login-header">
+        <div class="member-icon">👤</div>
+        <h2>Member Login</h2>
+        <p>Access your books, reservations, and reading history</p>
+      </div>
+      
+      <form class="login-form" id="memberLoginForm">
+        <div class="form-group">
+          <label for="memberEmail">Email Address or Member ID</label>
+          <input type="text" id="memberEmail" name="email" placeholder="Enter your email or member ID" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="memberPassword">Password</label>
+          <input type="password" id="memberPassword" name="password" placeholder="Enter your password" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="memberType">Account Type</label>
+          <select id="memberType" name="memberType" required>
+            <option value="">Select Account Type</option>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty/Staff</option>
+            <option value="researcher">Researcher</option>
+            <option value="public">General Public</option>
+            <option value="premium">Premium Member</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="institution">Institution/Organization (Optional)</label>
+          <input type="text" id="institution" name="institution" placeholder="Your school, company, or organization">
+        </div>
+        
+        <div class="form-options">
+          <label class="checkbox-label">
+            <input type="checkbox" id="memberRemember" name="remember">
+            <span class="checkmark"></span>
+            Remember me on this device
+          </label>
+        </div>
+        
+        <button type="submit" class="login-btn member-btn">Access My Library</button>
+        
+        <div class="login-links">
+          <a href="#" class="forgot-link">Forgot Password?</a>
+          <a href="#" class="register-link">New here? Create Account</a>
+        </div>
+      </form>
+      
+      <div class="member-benefits">
+        <h4>Member Benefits:</h4>
+        <ul>
+          <li>📚 Borrow up to 10 books simultaneously</li>
+          <li>📱 Digital access to e-books and journals</li>
+          <li>🔄 Automatic renewal notifications</li>
+          <li>📊 Personal reading statistics and recommendations</li>
+          <li>🎯 Priority access to new arrivals</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <div class="footer-logo">
+        <h3>📚 PrinTek's Library Hub</h3>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Information</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Librarian</a></li>
+          <li><a href="#">Member Area</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>This digital library management system was built by PrinTek based on modern web technologies; makes library management easy.</p>
+      <p class="footer-link">View more: <a href="#">https://printekhub.com</a></p>
+    </div>
+    <div class="footer-column">
+      <h3>Search</h3>
+      <p>Start it by typing one or more keywords for title, author or subject</p>
+      <div class="footer-search">
+        <input type="text" placeholder="Enter keywords" class="footer-search-input">
+        <button class="footer-search-btn">Find Collection</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 — PrinTek - Digital Library Management Online</p>
+    <p class="powered-by">Powered by <span class="highlight">PrinTek</span></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('memberLoginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const email = document.getElementById('memberEmail').value;
+  const password = document.getElementById('memberPassword').value;
+  const memberType = document.getElementById('memberType').value;
+  const institution = document.getElementById('institution').value;
+  
+  if (email && password && memberType) {
+    alert('Member login attempt:\nEmail/ID: ' + email + '\nAccount Type: ' + memberType + 
+          (institution ? '\nInstitution: ' + institution : '') + 
+          '\n\n(This would connect to your authentication system)');
+  }
+});
+</script>
+
+</body>
+</html>
