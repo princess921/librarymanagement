@@ -8,21 +8,15 @@
 <body>
 <header>
   <div class="logo">📚 PrinTek's Library Hub</div>
-  <!-- Added search bar container to header -->
-  <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search books, authors, or categories..." class="search-input">
-    <button type="button" id="searchBtn" class="search-btn">🔍</button>
-  </div>
-  <!-- End of added search bar -->
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Catalog</a></li>
-      <li><a href="#">Admin Login</a></li>
-      <li><a href="#">Student Login</a></li>
-      <li><a href="#">Contact us</a></li>
-      <li><a href="#">Register</a></li>
+      <li><a href="library-index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="catalog.html">Catalog</a></li>
+      <li><a href="admin-login.html">Admin Login</a></li>
+      <li><a href="member-login.html">Member Login</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="register.html">Register</a></li>
     </ul>
   </nav>
 </header>
@@ -37,14 +31,22 @@
   <button id="exploreBtn">Explore Catalog</button>
 </section>
 
-<!-- Added featured books carousel section -->
+<section class="search-section">
+  <div class="search-container-main">
+    <h2>Find Your Next Great Read</h2>
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" placeholder="Search books, authors, or categories..." class="search-input-main">
+      <button type="button" id="searchBtn" class="search-btn-main">🔍 Search</button>
+    </div>
+  </div>
+</section>
+
 <section class="featured-books">
   <div class="section-header">
     <h2>Featured Software Development Books</h2>
     <p>Discover the latest and most popular programming books</p>
   </div>
   
-  <!-- Moved navigation buttons outside carousel container -->
   <div class="carousel-navigation">
     <button class="carousel-btn prev-btn" id="prevBtn">❮</button>
     
@@ -52,7 +54,6 @@
       <div class="carousel-wrapper">
         <div class="carousel-track" id="carouselTrack">
           
-          <!-- Book 1: Clean Code -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg" alt="Clean Code book cover" class="book-image">
@@ -64,7 +65,6 @@
             </div>
           </div>
 
-          <!-- Book 2: The Pragmatic Programmer -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/41BKx1AxQWL._SX396_BO1,204,203,200_.jpg" alt="The Pragmatic Programmer book cover" class="book-image">
@@ -76,7 +76,6 @@
             </div>
           </div>
 
-          <!-- Book 3: Design Patterns -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/51szD9HC9pL._SX395_BO1,204,203,200_.jpg" alt="Design Patterns book cover" class="book-image">
@@ -88,7 +87,6 @@
             </div>
           </div>
 
-          <!-- Book 4: JavaScript: The Good Parts -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/5131OWtQRaL._SX381_BO1,204,203,200_.jpg" alt="JavaScript: The Good Parts book cover" class="book-image">
@@ -100,7 +98,6 @@
             </div>
           </div>
 
-          <!-- Book 5: You Don't Know JS -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/41T5H8u7fUL._SX331_BO1,204,203,200_.jpg" alt="You Don't Know JS book cover" class="book-image">
@@ -112,7 +109,6 @@
             </div>
           </div>
 
-          <!-- Book 6: Refactoring -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/41LBzpPXCOL._SX379_BO1,204,203,200_.jpg" alt="Refactoring book cover" class="book-image">
@@ -124,7 +120,6 @@
             </div>
           </div>
 
-          <!-- Book 7: The Clean Coder -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/41yJ75gpV-L._SX376_BO1,204,203,200_.jpg" alt="The Clean Coder book cover" class="book-image">
@@ -136,7 +131,6 @@
             </div>
           </div>
 
-          <!-- Book 8: Algorithms -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/61Pgdn8Ys-L._SX258_BO1,204,203,200_.jpg" alt="Algorithms book cover" class="book-image">
@@ -148,7 +142,6 @@
             </div>
           </div>
 
-          <!-- Book 9: System Design Interview -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/414CRjLjwgL._SX331_BO1,204,203,200_.jpg" alt="System Design Interview book cover" class="book-image">
@@ -160,7 +153,6 @@
             </div>
           </div>
 
-          <!-- Book 10: Cracking the Coding Interview -->
           <div class="book-card">
             <div class="book-cover">
               <img src="https://m.media-amazon.com/images/I/41oYsXjLvZL._SX348_BO1,204,203,200_.jpg" alt="Cracking the Coding Interview book cover" class="book-image">
@@ -176,13 +168,9 @@
       </div>
     </div>
     
-    <!-- Added missing next button -->
     <button class="carousel-btn next-btn" id="nextBtn">❯</button>
-    <!-- End of added next button -->
   </div>
-  <!-- End of moved navigation buttons -->
 </section>
-<!-- End of featured books carousel section -->
 
 <section class="features">
   <div class="feature-box">
@@ -199,9 +187,7 @@
   </div>
 </section>
 
-<!-- Added JavaScript for search and carousel functionality -->
 <script>
-// Search functionality
 document.getElementById('searchBtn').addEventListener('click', function() {
   const searchTerm = document.getElementById('searchInput').value.trim();
   if (searchTerm) {
@@ -215,7 +201,6 @@ document.getElementById('searchInput').addEventListener('keypress', function(e) 
   }
 });
 
-// Carousel functionality
 let currentSlide = 0;
 const track = document.getElementById('carouselTrack');
 const totalBooks = document.querySelectorAll('.book-card').length;
@@ -237,20 +222,52 @@ document.getElementById('prevBtn').addEventListener('click', function() {
   updateCarousel();
 });
 
-// Auto-scroll every 5 seconds
 setInterval(function() {
   currentSlide = currentSlide >= maxSlide ? 0 : currentSlide + 1;
   updateCarousel();
 }, 5000);
 </script>
-<!-- End of added JavaScript -->
 
 </body>
 <footer>
-  <div class="footer-content">
-    <p>&copy; 2025 PrinTek's Library Hub. All rights reserved.</p>
-    <p> Accra, Ghana | Mon-Fri: 8am-6pm</p>
-    <p>contact@printekhub.com | +233 50 442 3192</p>
+  <div class="footer-container">
+    <div class="footer-column">
+      <div class="footer-logo">
+        <h3>📚 PrinTek's Library Hub</h3>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Information</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Librarian</a></li>
+          <li><a href="#">Member Area</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>This digital library management system was built by PrinTek based on modern web technologies; makes library management easy. On this page, readers can view the books available in the library and make an appointment to borrow online.</p>
+      <p class="footer-link">View more: <a href="#">https://printeklibhub.com</a></p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Search</h3>
+      <p>Start it by typing one or more keywords for title, author or subject</p>
+      <div class="footer-search">
+        <input type="text" placeholder="Enter keywords" class="footer-search-input">
+        <button class="footer-search-btn">Find Collection</button>
+      </div>
+      <div class="footer-buttons">
+        <button class="footer-btn keep-alive">💚 Keep PrintekLibhub Alive</button>
+        <button class="footer-btn find-more">Find out more</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 — PrinTek's Library Hub</p>
+    <p class="powered-by">Powered by <span class="highlight">PrinTek</span></p>
   </div>
 </footer>
 </html>
